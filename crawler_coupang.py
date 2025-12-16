@@ -25,7 +25,7 @@ from playwright.sync_api import sync_playwright
 PAGE_REFRESH_INTERVAL = 50  # 50건마다 페이지 재생성
 
 # 쿠팡 메인 페이지
-COUPANG_HOME_URL = 'https://www.coupang.com'
+COUPANG_HOME_URL = 'https://www.coupang.com'  
 
 
 # ============================================================================
@@ -34,7 +34,7 @@ COUPANG_HOME_URL = 'https://www.coupang.com'
 def crawl_coupang(playwright, page, url, batch_dir, openai_api_key, logger, stats=None):
     """
     쿠팡 URL을 크롤링하여 HTML을 저장합니다. (미구현)
-
+   
     Args:
         playwright: Playwright 인스턴스
         page: Playwright Page 객체
@@ -205,3 +205,4 @@ class CoupangCrawlerHandler:
         except Exception as e:
             self.logger.error(f"[COUPANG 종료 오류] {e}")
             self.logger.debug(traceback.format_exc())
+

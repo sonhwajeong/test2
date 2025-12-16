@@ -1,4 +1,4 @@
-"""
+""" 
 네이버 스마트스토어 크롤러 모듈
 ================================
 네이버 스마트스토어 크롤링 전용 모듈입니다.
@@ -883,3 +883,4 @@ class NaverCrawlerHandler:
         except Exception as e:
             self.logger.error(f"[NAVER 종료 오류] {e}")
             self.logger.debug(traceback.format_exc())
+

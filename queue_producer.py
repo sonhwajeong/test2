@@ -4,7 +4,7 @@ RabbitMQ Producer
 CSV 파일에서 URL을 읽어서 RabbitMQ에 메시지를 전송합니다.
 URL에 따라 자동으로 사이트를 감지하여 해당 큐로 전송합니다.
 
-메시지 형식:
+메시지 형식:  
 {
     "site": "naver",  # or "coupang"
     "retryCount": 0,
@@ -265,3 +265,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+

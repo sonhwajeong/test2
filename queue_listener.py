@@ -12,7 +12,7 @@ RabbitMQ에서 메시지를 소비하고 사이트별 크롤링을 수행합니�
     "url": "https://smartstore.naver.com/...",
     "sleepSeconds": 0
 }
-"""
+"""  
 
 import pika
 import json
@@ -446,3 +446,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
